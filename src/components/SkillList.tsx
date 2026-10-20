@@ -1,4 +1,4 @@
-import {Stack, Button, Group, Input, Paper, Pill, Box} from "@mantine/core";
+import {Stack, Button, Group, Input, Paper, Pill, Flex} from "@mantine/core";
 import {useAppSelector, useAppDispatch} from "../store/hooks.ts";
 import {setSkill, removeSkill} from "../store/vacancySlice.ts";
 import {useState, type SyntheticEvent} from "react";
@@ -56,12 +56,12 @@ function SkillList() {
                         </Group>
                     </form>
                 </Input.Wrapper>
-                <Box>
+                <Flex wrap='wrap' gap={4}>
                     {skills.length > 0 &&
                         skills.map((skill) =>
                             (<Pill key={skill} bg='background.0' withRemoveButton onRemove={() => dispatch(removeSkill(skill))}>{skill}</Pill>))}
 
-                </Box>
+                </Flex>
             </Stack>
         </Paper>
     )
