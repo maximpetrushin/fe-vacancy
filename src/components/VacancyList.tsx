@@ -84,7 +84,7 @@ function VacancyList() {
                 </Card>
                 )}
                 {pagination.totalPages > 1 && (
-                    <Pagination mb={85} total={pagination.totalPages} value={currentPage} onChange={page => dispatch(setPage(page))} />
+                    <Pagination total={pagination.totalPages} value={currentPage} onChange={page => dispatch(setPage(page))} />
                 )}
             </Stack>
     )

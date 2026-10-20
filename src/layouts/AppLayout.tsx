@@ -14,7 +14,7 @@ function AppLayout() {
                 <SearchField />
             </Container>
             <Divider my='xs' opacity='0.1' m={0} mb={24}/>
-            <Container size={1000}>
+            <Container size={1000} mb={85}>
                 <Grid >
                     <Grid.Col span={4}>
                         <Stack>
