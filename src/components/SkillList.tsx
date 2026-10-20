@@ -2,6 +2,7 @@ import {Stack, Button, Group, Input, Paper, Pill, Box} from "@mantine/core";
 import {useAppSelector, useAppDispatch} from "../store/hooks.ts";
 import {setSkill, removeSkill} from "../store/vacancySlice.ts";
 import {useState, type SyntheticEvent} from "react";
+import {PlusIcon} from "@phosphor-icons/react";
 
 
 
@@ -51,7 +52,7 @@ function SkillList() {
                                 type='submit'
                                 variant='filled'
                                 fz='xl'
-                            >+</Button>
+                            ><PlusIcon color='white'/></Button>
                         </Group>
                     </form>
                 </Input.Wrapper>

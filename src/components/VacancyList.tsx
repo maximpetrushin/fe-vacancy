@@ -20,17 +20,15 @@ function VacancyList() {
         hybrid: {
             label: 'гибрид',
             color: 'black',
-            textColor: 'white'
         },
         office: {
             label: 'офис',
             color: 'lightGray.0',
-            textColor: 'gray'
+
         },
         remote: {
             label: 'Можно удалённо',
             color: 'primary',
-            textColor: 'white',
         }
     } as const;
 
@@ -77,7 +75,6 @@ function VacancyList() {
                                 radius='xs'
                                 size='xs'
                                 color={spaceConfig[item.space].color}
-                                c={spaceConfig[item.space].textColor}
                             >
                                 {spaceConfig[item.space].label}</Badge>
                             <Text>{item.city}</Text>
